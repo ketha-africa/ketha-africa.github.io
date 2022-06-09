@@ -12534,7 +12534,7 @@ button.bg-light:hover {
     background-color: #c8deea!important;
 }
 .bg-dark {
-    background-color: #181715!important;
+    background-color: #1d224c!important;
 }
 a.bg-dark:focus,
 a.bg-dark:hover,
@@ -15698,7 +15698,7 @@ button.bg-contrast:hover {
     color: #fff!important;
 }
 .text-primary {
-    color: #15be8b!important;
+    color: #1d224c!important;
 }
 a.text-primary:focus,
 a.text-primary:hover {
@@ -15733,7 +15733,7 @@ a.text-warning:hover {
     color: #ae5520!important;
 }
 .text-danger {
-    color: #15be8b!important;
+    color: #1d224c!important;
 }
 a.text-danger:focus,
 a.text-danger:hover {
@@ -16953,7 +16953,7 @@ textarea.form-control.form-control-rounded {
     position: relative;
 }
 .bg-dark.edge.top-left::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 310' fill='rgb(24,23,21)' fill-opacity='1'%3E%3Cpolygon points='0,310 100,310 100,0'%3E%3C/polygon%3E%3C/svg%3E");
+    background-image: url(../img/bg.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -18471,7 +18471,7 @@ textarea.form-control.form-control-rounded {
     background-color: transparent;
 }
 .gradient.gradient-primary-light {
-    background-image: linear-gradient(45deg,#20BF55 0,#01BAEF 100%);
+    background-image: linear-gradient(45deg,#1d224c 0,#1E255C 50%,#2234AE 110%);
 }
 .gradient.gradient-primary-dark {
     background-image: linear-gradient(45deg,#ff6f61 0,#e56357 100%);
@@ -18531,7 +18531,7 @@ textarea.form-control.form-control-rounded {
     background-image: linear-gradient(45deg,#edf4f8 0,#3f3e39 100%);
 }
 .gradient.gradient-primary-auxiliary {
-    background-image: linear-gradient(45deg,#20BF55 0,#10BDA4 50%,#01BAEF 110%);
+    background-image: linear-gradient(45deg,#1d224c 0,#1E255C 50%,#2234AE 110%);
 }
 .gradient.card .card-header {
     background-color: transparent;
@@ -20800,7 +20800,7 @@ strong {
     font-weight: 900!important;
 }
 .accent {
-    color: #20bf55;
+    color: #0a2540;
 }
 .h1,
 .h2,
@@ -21271,11 +21271,11 @@ main {
         top: 0;
     }
     .navigation.navbar-sticky .nav-link {
-        color: #ff6f61;
+        color: #1f2970;
     }
     .navigation.navbar-sticky .nav-link.active,
     .navigation.navbar-sticky .nav-link:hover {
-        color: #b14d43;
+        color: #2a3cbd;
     }
     .navigation.navbar-expanded .navbar-brand,
     .navigation.navbar-expanded .navbar-toggler,
@@ -22330,8 +22330,8 @@ section.shadow {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 450px;
-        margin-top: 50px!important;
+        width: 300px;
+        margin-top: 140px!important;
     }
     .isometric-mockups .phone-big {
         display: -webkit-box;
@@ -23165,7 +23165,7 @@ section.shadow {
     top: 0;
     -webkit-transform: translate3D(30%,-93%,0) skewX(35deg) rotate(-12deg);
     transform: translate3D(30%,-93%,0) skewX(35deg) rotate(-12deg);
-    background-color: #e56357;
+    background-color: #050713;
     max-height: 560px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -23265,4 +23265,14 @@ hr[class*=bg] {
 }
 hr {
     border-top: 1px solid #edf4f8;
+}
+@media  screen and (max-width: 600px) {
+    .hidden-sm{
+        display: none;
+    }
+}
+@media (min-width:600px) and (max-width: 1000px) {
+    .hidden-sm{
+        display: none;
+    }
 }

@@ -4,7 +4,7 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
         <title>Laapp - App Landing Page</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Place favicon.ico in the root directory --><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.ico"><link
             href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900"
-            rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=ab"></head>
+            rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=z0=2ab"></head>
     <body>
         <!--[if lt IE 8]> <p class="browserupgrade">You are using an
         <strong>outdated</strong> browser. Please <a
@@ -17,8 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span></button>
-                <a href="#main" class="navbar-brand"><img src="img/logo.png" alt="Laapp" class="logo logo-sticky d-block d-md-none">
-                    <img src="img/logo-light.png" alt="Laapp" class="logo d-none d-md-block"></a>
+                
                 <div class="collapse navbar-collapse" id="main-navbar">
                     <div class="sidebar-brand">
                         <a href="index.html"><img src="img/logo.png" alt="Laapp Template" class="logo"></a>
@@ -71,9 +70,9 @@
                     <div class="static-shape pattern-dots-2"></div>
                     <div class="static-shape ghost-shape ghost-shape-1"></div>
                 </div>
-                <div class="container bring-to-front">
+                <div class="container-fluid bring-to-front">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5" style="padding-left: 100px;">
                             <h1 class="extra-bold display-md-3 font-md"><span class="d-block display-md-4 light">A Payout Solution Customized to Your Needs</span></h1>
                             
                             <nav class="nav mt-5">
@@ -84,22 +83,32 @@
                                 <a href="#" class="nav-link btn btn-rounded btn-outline-contrast">How it works</a>
                             </nav>
                         </div>
+                        <div class="col-md-7 hidden-sm" style="position: relative;">
+                            <img src="img/screens/app/phone-removebg-preview.png" alt="" style="width: 30%;height:auto;">
+                            <img src="img/screens/app/bgc.jpg" alt="" style="    position: absolute;
+                            top: -30px;
+                            left: 25%;
+                            width: 90%;
+                            height: auto;
+                            z-index: -1;
+                            border-radius: 20px;">
+                        </div>
                     </div>
                 </div>
-            </header>
+            </header> 
             <!-- Isometric Mockups -->
-            <section class="isometric-mockups">
-                <div class="tablet ipad landscape">
+            <section class="isometric-mockups" style="transform: rotate(0deg);">
+                <div class="tablet ipad landscape" style="visibility:hidden">
                     <div class="screen"><img src="img/screens/tablet/screen.png" alt="..."></div>
                     <div class="button"></div>
                 </div>
-                <div class="iphone light phone-big">
-                    <div class="screen"><img src="img/screens/app/ketha app.png" alt="..."></div>
+                <div class="iphone light phone-big" style="visibility:hidden">
+                    <div class="screen"><img src="img/screens/app/kethaa app.png" alt="..."></div>
                     <div class="notch"></div>
                 </div>
                
-                <div class="tablet ipad portrait">
-                    <div class="screen"><img src="img/screens/tablet/2.png" alt="..."></div>
+                <div class="tablet ipad portrait" style="visibility:hidden">
+                    <div class="screen"><img src="img/screens/app/about.jpg" alt="..."></div>
                     <div class="button"></div>
                 </div>
             </section>
@@ -115,6 +124,7 @@
                                 <p class="lead">Our solution is built for today's african economy. It enables financial freedom to users to gain by providing rapid acccess to their earnings to pay bills, expenses and other risk reducing perks such as a vehicle, medical and agricultural insurance.</p>
                             </div>
                         </div>
+                        <div class="col-md-6"><img src="img/screens/app/design--.jpg" alt="..." class="img-responsive"></div>
                     </div>
                 </div>
             </section>
@@ -133,7 +143,7 @@
                     <div class="shape background-shape-main"></div>
                 </div>
                 <div class="container">
-                    <div class="row align-items-center" style="align-items: flex-center !important;">
+                    <div class="row" style="align-items: flex-start !important;">
                         <div class="col-lg-5 order-lg-last">
                             <div class="section-heading">
                                 <p class="px-2 text-alternate text-uppercase bold">A winning Ecosystem</p>
@@ -151,7 +161,7 @@
                                             <div class="card-body py-5 px-4">
                                                 <div
                                                     class="icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3">
-                                                    <i class="icon m-0 pe pe-7s-paint-bucket pe-3x"></i>
+                                                    <i class="icon m-0 pe pe-7s-user pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Reduced Absenteesm</h4>
                                                 
@@ -163,7 +173,7 @@
                                             <div class="card-body py-5 px-4">
                                                 <div
                                                     class="icon-box rounded-circle gradient gradient-primary-light text-contrast shadow icon-xl mb-3">
-                                                    <i class="icon m-0 pe pe-7s-diamond pe-3x"></i>
+                                                    <i class="icon m-0 pe pe-7s-check pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Increased Retention</h4>
                                                
@@ -243,7 +253,7 @@
                             </div>
                             <ul class="list-unstyled">
                                 <li class="media flex-column flex-md-row text-center text-md-left">
-                                    <i class="mx-auto mr-md-3 mx-auto mr-md-3 accent pe pe-7s-mail pe-3x"></i>
+                                    <i class="mx-auto mr-md-3 mx-auto mr-md-3 accent pe pe-7s-settings pe-3x"></i>
                                     <div class="media-body mt-3 mt-md-0">
                                         <h5 class="bold mt-0 mb-1">Integration with our payout platforms</h5>
                                        
