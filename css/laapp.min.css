@@ -10243,6 +10243,7 @@ input[type=submit].btn-block {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: flex-end;
 }
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
