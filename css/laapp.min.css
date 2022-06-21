@@ -14211,16 +14211,16 @@ button.bg-contrast:hover {
 }
 .mr-auto,
 .mx-auto {
-    margin-right: auto!important;
+    margin-right: 21px !important;
 }
 .mb-auto,
 .my-auto {
     margin-bottom: auto!important;
 }
-.ml-auto,
+/* .ml-auto,
 .mx-auto {
     margin-left: auto!important;
-}
+} */
 @media (min-width:576px) {
     .m-sm-0 {
         margin: 0!important;
@@ -14630,10 +14630,10 @@ button.bg-contrast:hover {
     .my-md-3 {
         margin-top: 1rem!important;
     }
-    .mr-md-3,
+    /* .mr-md-3,
     .mx-md-3 {
         margin-right: 1rem!important;
-    }
+    } */
     .mb-md-3,
     .my-md-3 {
         margin-bottom: 1rem!important;
@@ -23276,3 +23276,74 @@ hr {
         display: none;
     }
 }
+div.styled {
+    border-color: #FFEFE0 !important;
+    margin:0; padding: 30px;
+    counter-increment: section;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  div.styled:nth-child(even):before {
+      content: counter(section);
+      right: 100%;
+      margin-right: -15px;
+      position: absolute;
+      border-radius: 50%;
+      /* padding: 10px; */
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      background-color: #1d224c;
+      text-align: center;
+      color: #fff;
+      font-size: 120%;
+  }
+  
+  div.styled:nth-child(odd):before {
+    content: counter(section);
+      right: 100%;
+      margin-right: -15px;
+      position: absolute;
+      border-radius: 50%;
+      /* padding: 10px; */
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      background-color: #1d224c;
+      text-align: center;
+      color: #fff;
+      font-size: 120%;
+  }
+  
+  
+  
+  div.styled:nth-child(even) {
+    border-left: 2px dashed;
+    /* border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; */
+    margin-right: 30px; 
+    padding-right: 0;
+  }
+  
+  div.styled:nth-child(odd) {
+    border-left: 2px dashed;
+    /* border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; */
+    margin-right: 30px; 
+    padding-right: 0;
+  }
+  
+  div.styled:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+  }
+  
+  div.styled:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }
