@@ -4,7 +4,30 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
         <title>Website</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Place favicon.ico in the root directory --><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.ico"><link
             href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900"
-            rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=z0=3434343"></head>
+            rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=z0=3434343">
+        <style>
+            @media only screen and (min-width: 600px) {
+                .hidden-md {
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .mobile-padded {
+                    padding-bottom: 220px;
+                }
+                #works{
+                    padding: 0px 40px;
+                }
+                .hidden-sm{
+                    display: none;
+                }
+                .img-divs{
+                    padding: 10px 20px;
+
+                }
+            }
+        </style>
+    </head>
     <body>
         <!--[if lt IE 8]> <p class="browserupgrade">You are using an
         <strong>outdated</strong> browser. Please <a
@@ -17,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span></button>
-                
+
                 <div class="collapse navbar-collapse" id="main-navbar">
                     <div class="sidebar-brand">
                         <a href="index.html"><img src="img/logo.png" alt="Laapp Template" class="logo"></a>
@@ -27,7 +50,7 @@
                             <a class="nav-link scrollto" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollto" href="#solution">Our Solution</a>
+                            <a class="nav-link scrollto" href="#about">Our Solution</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scrollto" href="#works">How it works</a>
@@ -39,26 +62,33 @@
                             <a class="nav-link scrollto" href="#integration">Integration</a>
                         </li>
                         <li class="dropdown nav-item">
-                           
-                            <a class="nav-link scrollto dropdown-toggle" href="#industries" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Industries</a>
+
+                            <a
+                                class="nav-link scrollto dropdown-toggle"
+                                href="#industries"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-expanded="false">Industries</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="industries">
-                              <a class="dropdown-item" href="alter-1.html">Agriculture</a>
-                              <a class="dropdown-item" href="#">Gig Economy</a>
-                             
+                                <a class="dropdown-item" href="alter-1.html">Agriculture Sector</a>
+                                <a class="dropdown-item" href="#">Gig Economy</a>
+
                             </div>
                         </li>
                         <li class="dropdown nav-item">
-                           
-                            <a class="nav-link scrollto dropdown-toggle" href="#about" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">About</a>
+
+                            <a
+                                class="nav-link scrollto dropdown-toggle"
+                                href="#about"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-expanded="false">About</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="about">
-                              <a class="dropdown-item" href="alter-2.html">About Us</a>
-                              <a class="dropdown-item" href="alter-2.html#contact">Contact us</a>
+                                <a class="dropdown-item" href="alter-2.html">About Us</a>
+                                <a class="dropdown-item" href="alter-2.html#contact">Contact us</a>
                             </div>
                         </li>
-                    
-                       
-                        
-                        
+
                     </ul>
                 </div>
             </div>
@@ -90,20 +120,25 @@
                 </div>
                 <div class="container-fluid bring-to-front">
                     <div class="row">
-                        <div class="col-md-6" style="padding-left: 100px;">
-                            <h1 class="extra-bold display-md-3 font-md"><span class="d-block display-md-4 light">A Payout Solution<br> Customized to Your Needs</span></h1>
+                        <div class="col-md-6 mobile-padded" style="padding-left: 100px;">
+                            <h1 class="extra-bold display-md-3 font-md">
+                                <span class="d-block display-md-4 light">A Payout Solution<br>
+                                    Customized to Your Needs</span></h1>
                             <p class="lead">An environment where value creators get their earnings when they need them.</p>
                             <nav class="nav mt-5">
                                 <a href="#" class="nav-link mr-3 btn btn btn-rounded btn-contrast">
                                     <i class="fas fa-tag mr-3"></i>
-                                  Benefits
+                                    Benefits
                                 </a>
                                 <a href="#" class="nav-link btn btn-rounded btn-outline-contrast">How it works</a>
                             </nav>
                         </div>
                         <div class="col-md-6 hidden-sm" style="position: relative;">
                             <img src="img/app.png" alt="" style="width: 35%;height:auto;">
-                            <img src="img/dash-final-cash.png" alt="" style="position: absolute;
+                            <img
+                                src="img/dash-final-cash.png"
+                                alt=""
+                                style="position: absolute;
                             top: -30px;
                             left: 27%;
                             width: 100%;
@@ -113,8 +148,8 @@
                         </div>
                     </div>
                 </div>
-            </header> 
-            
+            </header>
+
             <!-- Isometric Mockups -->
             <section class="isometric-mockups" style="transform: rotate(0deg);">
                 <div class="tablet ipad landscape" style="visibility:hidden">
@@ -125,31 +160,63 @@
                     <div class="screen"><img src="img/screens/app/kethaa app.png" alt="..."></div>
                     <div class="notch"></div>
                 </div>
-               
+
                 <div class="tablet ipad portrait" style="visibility:hidden">
                     <div class="screen"><img src="img/screens/app/about.jpg" alt="..."></div>
                     <div class="button"></div>
                 </div>
             </section>
-            <!-- about us -->
-            <section class="section alter3-partners bg-contrast edge top-left" id="solution">
+            <!-- UI Mobile -->
+            <section
+                class="section alter3-partners bg-contrast edge top-left hidden-md hidden-lg hidden-xlg"
+                id="about">
                 <div class="container bring-to-front pb-md-9">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="section-heading" style="padding: 0px 20px;">
+                                <img src="img/app.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- about us -->
+            <section class="section alter3-partners bg-contrast edge top-left" id="about">
+                <div class="container bring-to-front pb-md-9">
+                    <div class="row">
+                        <div class="col-md-3">
                             <div class="section-heading">
                                 <i class="fas fa-lightbulb fa-3x accent mb-3"></i>
                                 <h2 class="heading-line">OUR SOLUTION</h2>
-                            
-                                <p class="lead">Our solution is built for today's african economy. It enables financial freedom to users to gain by providing rapid acccess to their earnings to pay bills, expenses and other risk reducing perks such as a vehicle, medical and agricultural insurance.</p>
+
+                                <p class="lead">Our solution is built for today's african economy. It enables
+                                    financial freedom to users to gain by providing rapid acccess to their earnings
+                                    to pay bills, expenses and other risk reducing perks such as a vehicle, medical
+                                    and agricultural insurance.</p>
                             </div>
                         </div>
-                        <div class="col-md-8"><img src="img/latest/about.png" alt="..." class="img-responsive" style="border-radius: 20px;margin: auto;"></div>
+                        <div class="col-md-9">
+                            <div class="hidden-sm">
+                                <img
+                            src="img/latest/about.png"
+                            alt="..."
+                            class="img-responsive"
+                            style="border-radius: 20px;margin: auto;">
+                            </div>
+                            <div class="hidden-md">
+                                <div class="img-divs">
+                                    <img src="img/farmers/farm-1.png" alt="" class="img-responsive"></div>
+                                <div class="img-divs"><img src="img/farmers/farm-2.png" alt="" class="img-responsive"></div>
+                                <div class="img-divs"><img src="img/farmers/farm-3.png" alt="" class="img-responsive"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-             <!-- How it works -->
-             <section class="section features-cant-miss">
+            <!-- How it works -->
+            <section class="section features-cant-miss">
                 <div class="shapes-container overflow-clear">
                     <div class="shape shape-circle shape-circle-1">
                         <div data-aos="fade-up-left"></div>
@@ -175,20 +242,27 @@
                                 <h2 class="heading-line">HOW IT WORKS</h2>
                             </div>
                             <div>
-                                <div class="styled"> <b>Step 1: </b> &nbsp; Integration with our payout platforms</div>
-                            <div class="styled"> <b>Step 2: </b> &nbsp; End-user app install/USSD Access</div>
-                            <div class="styled"> <b>Step 3: </b> &nbsp; Access to payouts and Benefits</div>
+                                <div class="styled">
+                                    <b>Step 1:
+                                    </b>
+                                    &nbsp; Integration with our payout platforms</div>
+                                <div class="styled">
+                                    <b>Step 2:
+                                    </b>
+                                    &nbsp; End-user app install/USSD Access</div>
+                                <div class="styled">
+                                    <b>Step 3:
+                                    </b>
+                                    &nbsp; Access to payouts and Benefits</div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                           <!-- <div class="bubble bubble-left center-x-md">
-                                <figure class="rounded overflow-hidden shadow" data-aos="zoom-in"><img src="img/screens/app/pieces/4.png" class="img-responsive" alt=""></figure>
-                            </div>
-                            <figure class="bubble bubble-right rounded overflow-hidden shadow"><img
-                                src="img/screens/app/pieces/5.png"
-                                class="img-responsive"
-                                alt=""
-                                data-aos="fade-left"></figure>-->
+                            <!-- <div class="bubble bubble-left center-x-md"> <figure class="rounded
+                            overflow-hidden shadow" data-aos="zoom-in"><img
+                            src="img/screens/app/pieces/4.png" class="img-responsive" alt=""></figure>
+                            </div> <figure class="bubble bubble-right rounded overflow-hidden shadow"><img
+                            src="img/screens/app/pieces/5.png" class="img-responsive" alt=""
+                            data-aos="fade-left"></figure>-->
                             <div class="iphone light">
                                 <div class="screen shadow-box"><img src="img/screens/app/black.jpg" alt="..."></div>
                                 <div class="notch"></div>
@@ -197,7 +271,6 @@
                     </div>
                 </div>
             </section>
-           
 
             <!-- Benefits -->
             <section class="section alter3-features" id="benefits">
@@ -221,7 +294,7 @@
                                 <h2 class="heading-line">BENEFITS</h2>
                                 <p class="lead text-muted my-4 semi-bold"></p>
                                 <p></p>
-                               
+
                             </div>
                         </div>
                         <div class="col-lg-7 pr-lg-6">
@@ -235,7 +308,7 @@
                                                     <i class="icon m-0 pe pe-7s-user pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Reduced Absenteesm</h4>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -247,7 +320,7 @@
                                                     <i class="icon m-0 pe pe-7s-check pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Increased Retention</h4>
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -261,7 +334,8 @@
                                                     <i class="icon m-0 pe pe-7s-light pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Improved Productivity</h4>
-                                                <!--<p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
+                                                <!--<p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit</p>-->
                                             </div>
                                         </div>
                                     </div>
@@ -273,7 +347,7 @@
                                                     <i class="icon m-0 pe pe-7s-cash pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Instant access to payments</h4>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -285,7 +359,7 @@
                                                     <i class="icon m-0 pe pe-7s-cash pe-3x"></i>
                                                 </div>
                                                 <h4 class="bold mb-5">Financial Inclusivity for employees and suppliers</h4>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -295,8 +369,7 @@
                     </div>
                 </div>
             </section>
-            
-           
+
             <!-- Integrations -->
             <section class="section integration-bubbles" id="integration">
                 <div class="container overflow-hidden">
@@ -343,20 +416,23 @@
                             <div class="section-heading">
                                 <p class="text-alternate text-uppercase bold">Work With Us</p>
                                 <h2 class="heading-line">INTEGRATION</h2>
-                                <p class="lead text-muted">We provide fast and easy to integrate API's to your platform or custom 
-                                    billing platforms for sectors such as Agriculture. That will enable quick Implementation and Adoption.</p>
+                                <p class="lead text-muted">We provide fast and easy to integrate API's to your
+                                    platform or custom billing platforms for sectors such as Agriculture. That will
+                                    enable quick Implementation and Adoption.</p>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
             </section>
-           
+
             <!-- Contact Channels -->
             <section class="section" id="contact">
                 <div class="container bring-to-front">
-                    <div class="row gap-y" style="display:flex;align-items:center;justify-content:center;">
-                       
+                    <div
+                        class="row gap-y"
+                        style="display:flex;align-items:center;justify-content:center;">
+
                         <div class="col-md-6 col-md-offset-3">
                             <div class="rounded media bg-contrast shadow-lg p-4">
                                 <div class="icon-shape mr-4">
@@ -364,19 +440,17 @@
                                 </div>
                                 <div class="media-body">
                                     <h2 class="heading-line">CONTACT US</h2>
-                                
+
                                     <p class="mt-4">
 
                                         +254 20 786 9222<br><br>
-                                        
+
                                         +254 740-397-637<br><br>
-                                        
+
                                         hello@ketha.africa<br><br>
-                                       
-                                        
-                                        Ikigai, 90 JGO, James Gichuru Road,
-                                        Lavington, Nairobi, Kenya
-                                        </p>
+
+                                        Ikigai, 90 JGO, James Gichuru Road, Lavington, Nairobi, Kenya
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -388,35 +462,32 @@
         <footer class="site-footer section bg-dark text-contrast edge top-left">
             <div class="container py-3">
                 <div class="row gap-y text-center text-md-left">
-                    
+
                     <div class="col-md-2">
                         <nav class="nav flex-column">
                             <a class="nav-item py-2 text-contrast" href="#home">Home</a>
                             <a class="nav-item py-2 text-contrast" href="#about">About</a>
-                            
+
                         </nav>
                     </div>
                     <div class="col-md-2">
                         <nav class="nav flex-column">
                             <a class="nav-item py-2 text-contrast" href="#benefits">Benefits</a>
                             <a class="nav-item py-2 text-contrast" href="#works">How it works</a>
-                           
+
                         </nav>
                     </div>
                     <div class="col-md-2">
                         <nav class="nav flex-column">
                             <a class="nav-item py-2 text-contrast" href="#integration">Integration</a>
                             <a class="nav-item py-2 text-contrast" href="#contact">Contact</a>
-                            
+
                         </nav>
                     </div>
                     <div class="col-md-2">
                         <h6 class="py-2 small">Follow us</h6>
                         <nav class="nav justify-content-around">
-                            <a
-                                
-                                target="_blank"
-                                class="btn btn-circle btn-sm brand-facebook">
+                            <a target="_blank" class="btn btn-circle btn-sm brand-facebook">
                                 <i class="fab fa-facebook"></i>
                             </a>
                             <a class="btn btn-circle btn-sm brand-twitter">
