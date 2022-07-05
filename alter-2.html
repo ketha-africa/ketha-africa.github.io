@@ -4,8 +4,16 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
         <title>Website</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Place favicon.ico in the root directory --><link rel="apple-touch-icon" href=""><link rel="icon" href="favicon.ico"><link
             href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900"
-            rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=54545"></head>
+            rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=54545">
+            <link rel="stylesheet" href="css/loader.css">
+        </head>
     <body>
+        <div class="loader" id="loader">
+            <div class="loading_icon">
+                <h2 style="text-align: center;color: #fff;">KETHA</h2>
+                <div class="lds-facebook"><div></div><div></div><div></div></div>
+            </div>
+        </div>
         <!--[if lt IE 8]> <p class="browserupgrade">You are using an
         <strong>outdated</strong> browser. Please <a
         href="http://browsehappy.com/">upgrade your browser</a> to improve your
@@ -295,6 +303,7 @@
         <script
             async="async"
             src="https://www.googletagmanager.com/gtag/js?id=UA-76592740-15"></script>
+            <script src="js/loader.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {

@@ -5,6 +5,7 @@
         <title>Website</title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Place favicon.ico in the root directory --><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.ico"><link
             href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900"
             rel="stylesheet"><link rel="stylesheet" href="css/laapp.min.css?id=z0=3434343">
+            <link rel="stylesheet" href="css/loader.css">
         <style>
             @media only screen and (min-width: 600px) {
                 .hidden-md {
@@ -14,23 +15,29 @@
             @media only screen and (max-width: 600px) {
                 .mobile-padded {
                     padding: 50px 10px 220px !important;
-                    padding-bottom: 220px;
-                    
+
                 }
-                #works{
-                    padding: 0px 40px;
+                #works {
+                    padding: 0 40px;
                 }
-                .hidden-sm{
+                .hidden-sm {
                     display: none;
                 }
-                .img-divs{
+                .img-divs {
                     padding: 10px 20px;
 
                 }
             }
+            
         </style>
     </head>
     <body>
+        <div class="loader" id="loader">
+            <div class="loading_icon">
+                <h2 style="text-align: center;color: #fff;">KETHA</h2>
+                <div class="lds-facebook"><div></div><div></div><div></div></div>
+            </div>
+        </div>
         <!--[if lt IE 8]> <p class="browserupgrade">You are using an
         <strong>outdated</strong> browser. Please <a
         href="http://browsehappy.com/">upgrade your browser</a> to improve your
@@ -126,10 +133,12 @@
                             <h1 class="extra-bold display-md-3 font-md">
                                 <span class="d-block display-md-4 light">A Payout Solution<br>
                                     Customized to Your Needs</span></h1>
-                            <p class="lead">We are building an ecosystem where value creators get their earnings 
-                                when they need them.</p>
+                            <p class="lead">We are building an ecosystem where value creators get their
+                                earnings when they need them.</p>
                             <nav class="nav mt-5">
-                                <a href="#benefits" class="nav-link mr-3 btn btn btn-rounded btn-contrast scrollto">
+                                <a
+                                    href="#benefits"
+                                    class="nav-link mr-3 btn btn btn-rounded btn-contrast scrollto">
                                     <i class="fas fa-tag mr-3"></i>
                                     Benefits
                                 </a>
@@ -195,17 +204,17 @@
 
                                 <p class="lead">Our solution is built for today's African economy. It enables
                                     financial freedom to users to gain by providing rapid acccess to their earnings
-                                    to pay bills, expenses and other risk redusing perks such as, medical
-                                    and agricultural insurance.</p>
+                                    to pay bills, expenses and other risk redusing perks such as, medical and
+                                    agricultural insurance.</p>
                             </div>
                         </div>
                         <div class="col-md-9">
                             <div class="hidden-sm">
                                 <img
-                            src="img/latest/about.png"
-                            alt="..."
-                            class="img-responsive"
-                            style="border-radius: 20px;margin: auto;">
+                                    src="img/latest/about.png"
+                                    alt="..."
+                                    class="img-responsive"
+                                    style="border-radius: 20px;margin: auto;">
                             </div>
                             <div class="hidden-md">
                                 <div class="img-divs">
@@ -419,9 +428,9 @@
                             <div class="section-heading">
                                 <p class="text-alternate text-uppercase bold">Work With Us</p>
                                 <h2 class="heading-line">INTEGRATION</h2>
-                                <p class="lead text-muted">We provide an easy to integrate API to your
-                                    platform. In case you don't have a platform, we have custom platforms for sectors 
-                                    such as Agriculture and gig workers.</p>
+                                <p class="lead text-muted">We provide an easy to integrate API to your platform.
+                                    In case you don't have a platform, we have custom platforms for sectors such as
+                                    Agriculture and gig workers.</p>
                             </div>
 
                         </div>
@@ -515,7 +524,9 @@
         <script
             async="async"
             src="https://www.googletagmanager.com/gtag/js?id=UA-76592740-15"></script>
+            <script src="js/loader.js"></script>
         <script>
+            
             window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);
